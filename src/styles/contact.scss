@@ -29,7 +29,6 @@
         margin-bottom: 80px;
 
         .contact__item {
-            border: .5px solid rgb(59, 58, 58);
             max-width: 200px;
             min-height: 350px;
             padding: 10px 20px;
@@ -73,6 +72,8 @@
                   margin-bottom: 30px;
                 }
               }
+
+            //*recent
 
         .recent{
           min-width: 30%;
@@ -133,28 +134,58 @@
           }
 
         }
-}
-        .copyright,
-        .services_c>ul,
-        address,
-        .about_c>p.contact__item-text{
 
+            //*services
+
+        .services{
+
+          .contact__item-title{
+            margin-bottom: 40px;
+          }
+          ul>li{
+            margin-bottom: 20px;
+              color: rgb(150, 150, 150);
+          }
+        }
+
+          //*questions
+
+          .questions{
+            min-width: 20%;
+            .contact__item-title {
+                margin-bottom: 40px;
+              }
+              .questions-img{
+                height: 20px;
+                margin-right: 20px;
+              }
+              .questions-img_address{
+                margin-right: 50px;
+                margin-bottom: -23px;
+                height: 20px;
+              }
+            li{
+              address{
+                font-style: normal;
+                margin-left: 40px;
+              }
+              color: rgb(150, 150, 150);
+              margin-bottom: 20px;
+            }
+          }
+}
+        .copyright{
           margin: 0 auto;
           color: rgb(150, 150, 150);
           font-style: normal;
-    }
-    li{
-      list-style: none;
-    }
-    a{
-      text-decoration: none;
-      color: inherit;
-    }
-    .item-phone,
-    .item-mail{
-      height: 20px;
-      width: 20px;
-    }
+            }
+            li{
+              list-style: none;
+            }
+            a{
+              text-decoration: none;
+              color: inherit;
+            }
   }
 
 }

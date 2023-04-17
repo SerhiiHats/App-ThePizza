@@ -2,13 +2,13 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #2d3141;
+        fill: white;
         fill-rule: evenodd;
         filter: url(#filter);
       }
     </style>
     <filter id="filter" x="593.5" y="273.375" width="47.312" height="42.563" filterUnits="userSpaceOnUse">
-      <feFlood result="flood" flood-color="#2ca9f0"/>
+      <feFlood result="flood" flood-color="white"/>
       <feComposite result="composite" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>
