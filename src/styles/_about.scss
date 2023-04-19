@@ -33,7 +33,7 @@ $borderMajorColorAbout: 2px solid $colorMajorYellow;
       .about-botton-modal {
          background-color: $colorAboutBlack;
          opacity: 0.6;
-         position:absolute;
+         position: absolute;
          z-index: 0;
          top: 0;
          left: 0;
@@ -42,10 +42,10 @@ $borderMajorColorAbout: 2px solid $colorMajorYellow;
       }
 
       .wrap-cards {
-         max-width: $size-container; 
+         max-width: $size-container;
          margin: auto;
          display: flex;
-         justify-content: center;    
+         justify-content: center;
          position: relative;
          top: 0;
          right: 0;
@@ -71,9 +71,13 @@ $borderMajorColorAbout: 2px solid $colorMajorYellow;
                   margin: $sizeAbout * 2 0;
                }
 
-               img{
-                  max-width: 50%;                 
-                  margin: $sizeAbout * 2 0;
+               .card-icon {
+                  max-width: 60%;
+                  margin: $sizeAbout * 1.8 0;
+               }
+
+               .higher {
+                  margin: $sizeAbout * 1.6 0;
                }
             }
 
