@@ -1,0 +1,135 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.2;
+}
+
+.slider {
+  height: calc(100vh - 10vh);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @include display;
+  line-height: 1.2;
+
+  &.one {
+    background-image: url("~assets/img/header/bg_1.jpg");
+    text-align: right;
+    justify-content: flex-end;
+  }
+
+  &.two {
+    background-image: url("~assets/img/header/bg_1.jpg");
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  &.three {
+    background-image: url("~assets/img/header/bg_3.jpg");
+    text-align: center;
+  }
+
+  &__text {
+    font-family: $font-family;
+    flex-direction: column;
+    width: 35%;
+    z-index: 1;
+  }
+
+  &__text-subtitle {
+    font-family: $font-familyDelicious;
+    color: $colorMajorYellow;
+    font-style: italic;
+    font-size: $font-size * 2;
+  }
+
+  &__text-title {
+    color: $colorMajorWhite;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: $font-size * 2.2;
+    letter-spacing: 1px;
+  }
+
+  &__text-description {
+    color: $colorMajorWhite;
+    font-size: calc($font-size/1.08);
+    font-family: $font-familyRoboto;
+    padding: 25px 0;
+  }
+
+  &__img {
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    z-index: 1;
+
+    &.first{
+      background-image: url("~assets/img/header/bg_1.png");
+      background-position: 15% center;
+    }
+
+    &.second{
+      background-image: url("~assets/img/header/bg_2.png");
+      background-position: 85% center;
+    }
+  }
+}
+
+.order-btn {
+  background: $colorMajorYellow;
+  padding: 16px 21px;
+  color: $colorMajorBlack;
+}
+
+.menu-btn {
+  background: none;
+  padding: 15px 20px;
+  border: 1px solid $colorMajorWhite;
+  color: $colorMajorWhite;
+  box-sizing: border-box;
+}
+
+.dots{
+  position:absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+
+  &__item{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 7px;
+    background: #eee;
+    cursor: pointer;
+    opacity: .5;
+    position: relative;
+
+    &-circle{
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+    &:last-child{
+      margin: 0;
+    }
+
+    &.active{
+      opacity: 1;
+    }
+  }
+}
+

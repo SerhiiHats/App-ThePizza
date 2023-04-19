@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Delicious+Handrawn&family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&family=Shantell+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Source+Sans+Pro:wght@400;600;700&display=swap"
-    rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Delicious+Handrawn&family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&family=Shantell+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet">
 
   <title>
     <%= htmlWebpackPlugin.options.title %>
@@ -19,24 +19,108 @@
 </head>
 
 <body>
-  <!-- Катя -->
-  <header>
-    <nav></nav>
-  </header>
-  <!-- Катя -->
-  <div class="slider"></div>
-  <!-- Вова -->
-  <div class="menu"></div>
-  <!-- Оля -->
-  <div class="services"></div>
-  <!-- Сережа -->
-  <div class="blog"></div>
-  <!-- Сережа -->
-  <div class="about"></div>
-  <!-- Вова Дема -->
-  <div class="contact"></div>
-  <!-- Вова -->
-  <footer></footer>
+<!-- Катя -->
+<header class="header">
+  <div class="container header">
+    <div class="logo">
+      <img src="assets/img/header/logo.png" alt="Pizza Delicous">
+    </div>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li><a href="/">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Катя -->
+<div class="slides">
+<div class="slider one">
+  <div class="overlay"></div>
+  <div class="slider__text">
+    <div>
+      <p class="slider__text-subtitle">Delicious</p>
+    </div>
+    <div>
+      <p class="slider__text-title">italian cuizine</p>
+    </div>
+    <div>
+      <p class="slider__text-description">A small river named Duden flows be their place and supplies it with the
+        necessary regelialia.</p>
+    </div>
+    <div>
+      <button class="order-btn">Order Now</button>
+      <button class="menu-btn">View Menu</button>
+    </div>
+  </div>
+  <div class="slider__img first">
+
+  </div>
+</div>
+
+<div class="slider two">
+  <div class="overlay"></div>
+  <div class="slider__img second"></div>
+  <div class="slider__text">
+    <div>
+      <p class="slider__text-subtitle">Crunchy</p>
+    </div>
+    <div>
+      <p class="slider__text-title">italian pizza</p>
+    </div>
+    <div>
+      <p class="slider__text-description">A small river named Duden flows be their place and supplies it with the
+        necessary regelialia.</p>
+    </div>
+    <div>
+      <button class="order-btn">Order Now</button>
+      <button class="menu-btn">View Menu</button>
+    </div>
+  </div>
+</div>
+
+<div class="slider three">
+  <div class="overlay"></div>
+  <div class="slider__text">
+    <div>
+      <p class="slider__text-subtitle">Welcome</p>
+    </div>
+    <div>
+      <p class="slider__text-title">we cooked your desired pizza recipe</p>
+    </div>
+    <div>
+      <p class="slider__text-description">A small river named Duden flows be their place and supplies it with the
+        necessary regelialia.</p>
+    </div>
+    <div>
+      <button class="order-btn">Order Now</button>
+      <button class="menu-btn">View Menu</button>
+    </div>
+  </div>
+</div>
+
+  <div class="dots">
+    <div class="dots__item active"><div class="dots__item-circle"></div></div>
+    <div class="dots__item"><div class="dots__item-circle"></div></div>
+    <div class="dots__item"><div class="dots__item-circle"></div></div>
+  </div>
+</div>
+<!-- Вова -->
+<div id="menu" class="menu"></div>
+<!-- Оля -->
+<div id="services" class="services"></div>
+<!-- Сережа -->
+<div id="blog" class="blog"></div>
+<!-- Сережа -->
+<div id="about" class="about"></div>
+<!-- Вова Дема -->
+<div id="contact" class="contact"></div>
+<!-- Вова -->
+<footer></footer>
 
 </body>
 
