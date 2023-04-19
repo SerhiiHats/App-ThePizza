@@ -4,11 +4,12 @@ $colorAboutBlack: black;
 $colorAboutLightGrey: lightgrey;
 $borderMajorColorAbout: 2px solid $colorMajorYellow;
 
-.about {
+.about-main {
    background-image: url("/src/images/bg_2.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    max-height: 100%;
+   background-position: bottom;
 
    .about-top {
       display: flex;
@@ -32,7 +33,7 @@ $borderMajorColorAbout: 2px solid $colorMajorYellow;
 
       .about-botton-modal {
          background-color: $colorAboutBlack;
-         opacity: 0.6;
+         opacity: 0.8;
          position: absolute;
          z-index: 0;
          top: 0;
@@ -54,7 +55,7 @@ $borderMajorColorAbout: 2px solid $colorMajorYellow;
          .card-goal {
             width: $sizeAbout * 24;
             height: $sizeAbout * 24.5;
-            margin-top: $sizeAbout * 7;
+            margin-top: $sizeAbout * 9;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -83,18 +84,19 @@ $borderMajorColorAbout: 2px solid $colorMajorYellow;
 
             p {
                font-family: "Roboto", sans-serif;
-
+               text-align: center;
                &:nth-child(2) {
                   color: $colorMajorYellow;
                   font-size: $font-size * 2.2;
-                  text-align: center;
+                  margin-top: $sizeAbout * 4;
                   margin-bottom: 0;
                }
 
                &:nth-child(3) {
                   color: $colorAboutLightGrey;
-                  font-size: $font-size * 1.2;
-                  text-align: center;
+                  font-size: $font-size * 1.1;
+                  margin-top: $sizeAbout * 1.2;
+                  margin-bottom: 0;
                }
             }
          }
