@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+}
+.menu{
+    background-image: url(../images/bg_4.jpg);
+    background-size: contain;
+}
+.menu__listOfProducts-pizza img{
+    width: 305px;
+    height: 219px;
+}
+
+.menu__listOfProducts-pizza{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+    max-width: 100%;
+}
+
+.menu__listOfProducts-wrapper{
+    width: 310px;
+    height: 250px;
+    opacity: 0.9;
+}
+.menu__listOfProducts-wrapper h3{
+    color:rgb(253, 253, 253);
+    font-size: 23px;
+    padding: 15px;
+}
+.menu__listOfProducts-wrapper p{
+    font-size: 20px;
+    color:rgb(153, 151, 151);
+    padding: 15px;
+    max-width: 240px;
+}
+
+.menu__header{
+    text-align: center;
+    height: 250px;
+    padding-top: 55px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.menu__header h3{
+color:rgb(255, 255, 255);
+font-size: 35px;
+padding-bottom: 20px;
+}
+.menu__header p{
+    color:rgb(153, 151, 151);
+    text-align: center;
+    font-size: 18px;
+    max-width: 642px;
+}
+.div__price-wrapper p{
+   color:rgb(218, 135, 12);
+   font-size: 23px;
+}
+.div__price-wrapper{
+    display: flex;
+}
+.div__price-wrapper button {
+    background-color:rgb(46, 43, 43);
+    color:rgb(253, 253, 253);
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 0 25px;
+}
+
+// OUR MENU PRICING 
+
+#pricing-menu {
+ padding-top: 100px;
+}
+.menu-pricing__price {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu-item img{
+    width: 69px;
+    height: 71px;
+}
+
+.menu-item{
+    display: flex;
+    max-width: 50%;
+    margin-top: 27px;
+    margin-right: -45px;
+}
+.menu-item .p__price {
+    padding-left: 25px;
+    color:rgb(226, 141, 12);
+}
+
+.wrapper__div-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.name__menu-pizza{
+    color:rgb(253, 248, 253);
+    font-size: 20px;
+    border-bottom: 1px dotted rgb(255, 144, 17);
+    width: 87%;
+    text-align: justify;
+}
+.description__pizza{
+    color:rgb(197, 191, 197);
+    padding-top: 15px;
+    align-items:center;
+    flex-direction: column;
+}
+
+.menu-pricing__header{
+    text-align: center;
+    display: flex;
+    margin: 50px 0 ;
+    flex-direction: column;
+
+}
+.menu-pricing__header h3{
+    color:rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+.menu-pricing__header p{
+    color:rgb(187, 184, 187);
+}
+
+.menu-pricing-header__img{
+    width: 200px;
+    padding: 50px
+}
+
+// PIZZA DRINKS PASTA
+
+.menu__container-select-food{
+    display: grid;
+    grid-template-columns: 700px 2fr;
+    padding-top: 150px ;
+}
+.menu-container-select-food__img{
+    grid-column: 1;
+}
+.menu-container-select-food__img img {
+    max-width: 700px;
+    height: 90%
+}
+.menu-container-select__section{
+    grid-column: 2;
+   
+    padding-bottom: 16px;
+}
+.menu-container-select-section__list{
+    padding-bottom: 30px;
+}
+.select-section-list__item{
+    display: flex;
+}
+
+.select-section-list__item li{
+    color:rgb(243, 135, 12);
+    list-style: none;
+    border: 1px solid rgb(243, 135, 12);
+    padding: 25px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.menu-container-select__section img{
+    width: 350px;
+    height: 290px;
+    border-radius: 100px;
+   
+}
+.menu-container-select-section__item-foods {
+   
+    display: flex;
+}
+.div__itemsMenu0{
+    
+    text-align: center;
+}
+.div__itemsMenu1{
+    
+    text-align: center;
+}
+.div__itemsMenu2{
+    
+    text-align: center;
+}
+.menu-container-select-food__img{
+    padding-bottom: 50px;
+}
+
+
+.name-pizza{
+    color:rgb(250, 250, 250);
+    font-size: 25px;
+    padding-top: 20px;
+}
+.description-pizza{
+    color:rgb(167, 161, 167);
+    font-size: 20px;
+    padding: 20px 0 ;
+}
+.pizza-price{
+    color:rgb(255, 152, 17);
+    font-size: 18px;
+    padding: 50px 0;
+}
+
+.div__itemsMenu0 button {
+    background-color:rgb(22, 22, 22);
+    color:rgb(252, 251, 252);
+    padding: 15px;
+    border: 1px solid rgb(245, 244, 245);
+   
+}
+.div__itemsMenu1 button {
+    background-color:rgb(22, 22, 22);
+    color:rgb(252, 251, 252);
+    padding: 15px;
+    border: 1px solid rgb(245, 244, 245);
+   
+}
+
+.div__itemsMenu2 button {
+    background-color:rgb(22, 22, 22);
+    color:rgb(252, 251, 252);
+    padding: 15px;
+    border: 1px solid rgb(245, 244, 245);
+   
+}
+
+.active {
+    color:rgb(5, 5, 5);
+    background-color:rgb(0, 176, 245);
+    border:none;
+}
+
+// cart
+.menu__cart img{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+   top:50px;
+   right: 100px;
+   
+   
+
+}
+.menu__cart {
+    position: absolute;
+}
+
+.menu-cart__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.menu-cart__modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.menu-cart-modal__box {
+    position: relative;
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1;
+    margin: 30px 15px;
+    background-color: white;
+    box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.modal__close-btn svg path {
+    transition: fill .4s;
+}
+
+.modal__close-btn:hover svg path {
+    fill: blue;
+}
+
+.modal__close-btn:active svg path {
+    fill: rgb(186, 53, 0);
+}
+
+.menu-cart__modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-cart__modal.open .menu-cart-modal__box {
+    transform: scale(1);
+}
+.cart-total-price__wrapper{
+    display: flex;
+    padding-top: 30px;
+}
+.cart-total-price-wrapper__price{
+    padding-left: 20px;
+}
+.cartNameProduct{
+    font-size: 20px;
+    padding-top: 20px;
+}
+*button:hover{
+    color : rgb(243, 135, 12);
+     background-color : " ";
+    border : 1px solid rgb(243, 135, 12);
+    cursor: pointer;
+
+}
