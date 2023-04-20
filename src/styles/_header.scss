@@ -22,7 +22,7 @@
     &__list {
       @include display;
       justify-content: space-evenly;
-      opacity: .7;
+      opacity: .8;
     }
 
     a:active {
@@ -33,12 +33,10 @@
 .logo img{
   width: 80%;
 }
+body._pc .menu__list > li:hover{
 
+}
 
-@media (max-width: 650px) {
-
-  .container {
-    width: calc($size-container/2);
-  }
+@media (max-width: 767px) {
 
 }

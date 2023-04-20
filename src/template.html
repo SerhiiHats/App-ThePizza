@@ -26,14 +26,18 @@
     <div class="logo">
       <img src="assets/img/header/logo.png" alt="Pizza Delicous">
     </div>
+
     <nav class="menu">
+      <div class="menu__icon">
+        <span></span>
+      </div>
       <ul class="menu__list">
         <li><a href="/">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a data-goto=".menu" href="#menu">Menu</a></li>
+        <li><a data-goto=".services" href="#services">Services</a></li>
+        <li><a data-goto=".blog" href="#blog">Blog</a></li>
+        <li><a data-goto=".about" href="#about">About</a></li>
+        <li><a data-goto=".contact" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
