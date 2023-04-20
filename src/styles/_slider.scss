@@ -141,5 +141,70 @@
 }
 
 @media (max-width: 650px) {
+.slider{
+
+  &__text-title {
+    font-size: $font-size * 1.4;
+    letter-spacing: 2px;
+    line-height: 2;
+  }
+
+  &__text {
+    width: 50%;
+  }
+
+  &__img {
+    width: 40%;
+    background-size: 70%;
+  }
+}
+}
+
+@media (max-width: 450px) {
+  .order-btn {
+    background: $colorMajorYellow;
+    padding: 16px 21px;
+    color: $colorMajorBlack;
+  }
+
+  .menu-btn {
+    background: none;
+    padding: 15px 20px;
+    border: 1px solid $colorMajorWhite;
+    color: $colorMajorWhite;
+    box-sizing: border-box;
+  }
+
+  .slider__text-btns {
+    @include display;
+    width: 239px;
+  }
+}
+
+@media (max-width: 450px) {
+  .slider{
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &.one,
+    &.two,
+    &.three {
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__text{
+      width: 70%;
+    }
+
+    &__text-btns {
+      @include display;
+      width: 239px;
+    }
+
+    &__img{
+      display: none;
+    }
+  }
 
 }
