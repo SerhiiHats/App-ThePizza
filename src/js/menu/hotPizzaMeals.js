@@ -9,7 +9,6 @@ export const HotPizzaMeals = (menu) => {
         let img = document.createElement('img');
 
         img.src = el.img;
-        // menuListOfProducts.append(img);
         divWrapperListProduct.append(img)
 
         let divWrapperDescription = document.createElement('div');
