@@ -1,21 +1,21 @@
 const isMobile = {
-    Android: function (){
+    Android: function () {
         return navigator.userAgent.match(/Android/i)
     },
-    BlackBerry: function (){
+    BlackBerry: function () {
         return navigator.userAgent.match(/BlackBerry/i)
     },
-    iOS: function (){
+    iOS: function () {
         return navigator.userAgent.match(/iPhone|iPad|iPod/i)
     },
-    Opera: function (){
+    Opera: function () {
         return navigator.userAgent.match(/Opera Mini/i)
     },
-    Windows: function (){
+    Windows: function () {
         return navigator.userAgent.match(/IEMobile/i)
     },
-    any: function (){
-        return(
+    any: function () {
+        return (
             isMobile.Android() ||
             isMobile.BlackBerry() ||
             isMobile.iOS() ||
@@ -35,14 +35,19 @@ if (isMobile.any()) {
 
 const menuLinks = document.querySelectorAll('li[data-goto]')
 
-if(menuLinks.length > 0) {
+if (menuLinks.length > 0) {
     menuLinks.forEach(element => {
         element.addEventListener('click', (e) => {
             let menuLink = e.target
-            if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
+            if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
                 const gotoBlock = document.querySelector(menuLink.dataset.goto)
                 const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight
 
+                window.scrollTo({
+                    top: gotoBlockValue,
+                    behavior: 'smooth'
+                })
+                e.preventDefault()
             }
         })
     })
