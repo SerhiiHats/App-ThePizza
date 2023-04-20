@@ -1,32 +1,33 @@
 
 
-import Italiana from "../images/pizza-1.jpg";
-import Greak from "../images/pizza-2.jpg";
-import Caucasian from "../images/pizza-3.jpg";
-import American from "../images/pizza-4.jpg";
-import Tomatoe from "../images/pizza-5.jpg";
-import Margherita from "../images/pizza-6.jpg";
-import ItalianaBg from "../images/pizza-1-Bg.png";
-import HawaiaSpecialBg from "../images/pizza-5-Bg.png";
-import HawaiaBg from "../images/pizza-2-Bg.png";
-import Ultimae from "../images/pizza-7-Bg.png";
-import Bacon from "../images/pizza-8-Bg.png";
-import Crispy from "../images/pizza-4-Bg.png";
-import pricingImg from "../images/tre.png";
-import juicy from '../images/juicyMix.png';
-import cocaCola from '../images/juicyFruties.png';
-import sprite from '../images/juicyOrange.png';
-import burgerFirst from '../images/burger_1.png';
-import burgerSecond from '../images/burger_2.png';
-import burgerThird from '../images/burger_3.png';
-import pastaFirst from '../images/pasta_1.png';
-import pastaSecond from '../images/pasta_2.png';
-import pastaThird from '../images/pasta_3.png';
-import carT from "../images/bag.png";
-import about from "../images/about.jpg";
+import Italiana from "../../images/img_menu/pizza-1test.jpg";
+import Greak from "../../images/img_menu/pizza-2test.jpg";
+import Caucasian from "../../images/img_menu/pizza-3test.jpg";
+import American from "../../images/img_menu/pizza-4test.jpg";
+import Tomatoe from "../../images/img_menu/pizza-5.jpg";
+import Margherita from "../../images/img_menu/pizza-6test.jpg";
+import ItalianaBg from "../../images/img_menu/pizza-1-Bg.png";
+import HawaiaSpecialBg from "../../images/img_menu/pizza-5-Bg.png";
+import HawaiaBg from "../../images/img_menu/pizza-2-Bg.png";
+import Ultimae from "../../images/img_menu/pizza-7-Bg.png";
+import Bacon from "../../images/img_menu/pizza-8-Bg.png";
+import Crispy from "../../images/img_menu/pizza-4-Bg.png";
+import pricingImg from "../../images/img_menu/tre.png";
+import juicy from '../../images/img_menu/juicyMix.png';
+import cocaCola from '../../images/img_menu/juicyFruties.png';
+import sprite from '../../images/img_menu/juicyOrange.png';
+import burgerFirst from '../../images/img_menu/burger_1.png';
+import burgerSecond from '../../images/img_menu/burger_2.png';
+import burgerThird from '../../images/img_menu/burger_3.png';
+import pastaFirst from '../../images/img_menu/pasta_1.png';
+import pastaSecond from '../../images/img_menu/pasta_2.png';
+import pastaThird from '../../images/img_menu/pasta_3.png';
+import carT from "../../images/img_menu/bag.png";
+import about from "../../images/img_menu/about.jpg";
+
 
 import { HotPizzaMeals } from "./hotPizzaMeals";
-import { OurMenuPricing } from "./ourMenuPricing"
+import { OurMenuPricing } from "./ourMenuPricing";
 import { HotPizzaMealsSecondRow } from './hotPizzaMeals';
 
 import { ChoosingTypeOfProduct } from "./typeOfProducts";
@@ -63,19 +64,19 @@ let dataForSectionHotPizzaMeals = [
 let dataForSectionHotPizzaMealsSecondRow = [
   {
       name: "American Pizza",
-      desciption: "a small river named Duden flows by their place and supplies",
+      desciption: "Far far away,behind the word mountains,far fram the countries Vakalia and Cansonantia",
       img: American,
       price: "$1.90",
   },
   {
       name: "Tomatoe Pizza",
-      desciption: "a small river named Duden flows by their place and supplies",
+      desciption: "Far far away,behind the word mountains,far fram the countries Vakalia and Cansonantia",
       img: Tomatoe,
       price: "$2.20",
   },
   {
       name: "Margherita Pizza",
-      desciption: "a small river named Duden flows by their place and supplies",
+      desciption: "Far far away,behind the word mountains,far fram the countries Vakalia and Cansonantia",
       img: Margherita,
       price: "$2.50",
   },

@@ -3,7 +3,7 @@
 
 }
 
-.menu{
+.menu-section{
     background-image: url(../images/bg_4.jpg);
     background-size: contain;
 }
@@ -52,6 +52,11 @@
     justify-content: space-between;
     padding-left: 115px;
     padding-right: 50px;
+}
+.menu-container-select-section__item-foods button:hover{
+    color:rgb(255, 124, 17);;
+    background-color:rgb(0, 0, 0);
+    border: 1px solid rgb(255, 124, 17);
 }
 @media (max-width : 1850px) {
     .menu__listOfProducts-pizza img{
