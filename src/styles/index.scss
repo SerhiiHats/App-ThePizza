@@ -4,11 +4,14 @@
 }
 
 @import "variables";
-// @import "header";
-// @import "slider";
+@import "restyle";
+@import "mixin";
+@import "header";
+@import "slider";
 // @import "menu";
 // @import "services";
-// @import "blog";
-// @import "about";
-// @import "contact";
+@import "blog";
+@import "about";
+@import "contact";
+@import "mapform";
 // @import "footer";
