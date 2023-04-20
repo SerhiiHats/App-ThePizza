@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter.ttf");
+}
+
+// @import "header";
+// @import "slider";
+// @import "services";
+// @import "blog";
+// @import "about";
+// @import "contact";
+// @import "footer";
+
+@import "variables";
+@import "menu";
+@import "menu_pricing";
+@import "llistOfProducts";
+@import "selectProducts";
+@import "_cart";
+
