@@ -2,7 +2,7 @@
     margin: 0;
 
 }
-// PIZZA DRINKS PASTA
+
 .menu{
     background-image: url(../images/bg_4.jpg);
     background-size: contain;
@@ -21,12 +21,14 @@
 }
 .menu-container-select__section{
     grid-column: 2;
-   
     padding-bottom: 16px;
 }
+
+
 .menu-container-select-section__list{
     padding-bottom: 30px;
 }
+
 .select-section-list__item{
     display: flex;
 }
@@ -42,6 +44,7 @@
 
 .menu-container-select__section img{
     max-width: 200px;
+    max-height: 186px;
 }
 .menu-container-select-section__item-foods {
    
@@ -50,9 +53,106 @@
     padding-left: 115px;
     padding-right: 50px;
 }
+@media (max-width : 1850px) {
+    .menu__listOfProducts-pizza img{
+        max-width: 200px;
+        max-height: 150px;
+
+    }
+    .menu__listOfProducts-pizza .description__text{
+        max-width: 200px;
+        max-height: 150px;
+
+    }
+}
+@media (max-width:1405px) {
+    .menu-container-select-section__item-foods img{
+        max-width: 100px;
+        max-height: 93.2px;
+      
+    }
+    .menu-container-select-section__item-foods p{
+        font-size: 15px;
+      
+    }
+    .menu-container-select-section__item-foods button{
+        font-size: 11px;
+        padding: 0;
+       
+      
+    }
+    .menu-container-select-section__list li{
+        max-width: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-container-select-section__item-foods{
+        padding-left: 0px;
+    }
+  }
+  @media (max-width:1300px) {
+    .menu-container-select-food__img img{
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .menu__container-select-food{
+        grid-template-columns: 400px 700px;
+
+    }
+    .menu-container-select-food__img{
+        
+    }
+    .menu-container-select-section{
+        
+    }
+    
+  }
+  @media (max-width : 1050px) {
+    .menu-container-select-section__item-foods img{
+        max-width: 50px;
+    }
+    .menu-container-select-section__item-foods p{
+        font-size: 10px;
+        max-width: 100px;
+      
+    }
+    .menu-container-select-section__item-foods{
+        justify-content: flex-start;
+        padding-left: 50px;
+    }
+    
+  }
+  @media (max-width:770px) {
+    .menu__container-select-food{
+        grid-template-columns: 10px 100%;
+       
+
+    }
+    .menu-container-select-section__item-foods{
+      
+        
+    }
+    .menu-container-select-food__img img{
+     
+        visibility: hidden;
+       
+    }
+    .menu-container-select__section{
+        margin: 0 auto;
+    }
+    
+  }
 .descriptionOfProducts__wrapper {
     max-width: 269px;
     margin: 0 auto;
+}
+.menu-container-select-section__item-foods button{
+    background-color:rgb(22, 22, 22);
+    color:rgb(252, 251, 252);
+    padding: 15px;
+    border: 1px solid rgb(245, 244, 245);
+   
+  
 }
 .div__itemsMenu0{
     
@@ -74,7 +174,7 @@
 }
 .description-pizza{
     color:rgb(167, 161, 167);
-    font-size: 187x;
+    
     padding: 20px 0 ;
 }
 .pizza-price{
@@ -83,28 +183,28 @@
     padding: 20px 0;
 }
 
-.div__itemsMenu0 button {
-    background-color:rgb(22, 22, 22);
-    color:rgb(252, 251, 252);
-    padding: 15px;
-    border: 1px solid rgb(245, 244, 245);
+// .div__itemsMenu0 button {
+//     background-color:rgb(22, 22, 22);
+//     color:rgb(252, 251, 252);
+//     padding: 15px;
+//     border: 1px solid rgb(245, 244, 245);
    
-}
-.div__itemsMenu1 button {
-    background-color:rgb(22, 22, 22);
-    color:rgb(252, 251, 252);
-    padding: 15px;
-    border: 1px solid rgb(245, 244, 245);
+// }
+// .div__itemsMenu1 button {
+//     background-color:rgb(22, 22, 22);
+//     color:rgb(252, 251, 252);
+//     padding: 15px;
+//     border: 1px solid rgb(245, 244, 245);
    
-}
+// }
 
-.div__itemsMenu2 button {
-    background-color:rgb(22, 22, 22);
-    color:rgb(252, 251, 252);
-    padding: 15px;
-    border: 1px solid rgb(245, 244, 245);
+// .div__itemsMenu2 button {
+//     background-color:rgb(22, 22, 22);
+//     color:rgb(252, 251, 252);
+//     padding: 15px;
+//     border: 1px solid rgb(245, 244, 245);
    
-}
+// }
 
 .active {
     color:rgb(5, 5, 5);
