@@ -299,6 +299,9 @@ if (arrayForCartItems.length > 3) {
 }
 let menuContainer = document.querySelector('.menu-container-select-section__item-foods ')
 let addToCartBtns = document.querySelectorAll(".menu-container-select-section__item-foods button");
+
+let sum = 0;
+let total = document.querySelector('.cart-total-price-wrapper__price');
 menuContainer.addEventListener('click', (e) => {
 
   for (let el of addToCartBtns) {
@@ -318,7 +321,15 @@ menuContainer.addEventListener('click', (e) => {
           };
           arrayForCartItems.length = 0;
           arrayForCartItems.push(dataForCartItem);
+
+         
+        
+          let num = priceOfProducts.textContent.substr(1);
+          sum += +num;
+
+          total.textContent =  sum ;
       }
+     
    
   }
 })
