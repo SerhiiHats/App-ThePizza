@@ -1,3 +1,6 @@
+body{
+  overflow: auto;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -9,7 +12,7 @@
 }
 
 .slider {
-  height: calc(100vh - 10vh);
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -41,10 +44,11 @@
   }
 
   &__text-subtitle {
-    font-family: $font-familyDelicious;
+    font-family: $font-familyNothing;
     color: $colorMajorYellow;
     font-style: italic;
     font-size: $font-size * 2;
+    line-height: 2;
   }
 
   &__text-title {
@@ -53,6 +57,7 @@
     font-weight: 600;
     font-size: $font-size * 2.2;
     letter-spacing: 1px;
+
   }
 
   &__text-description {
@@ -60,6 +65,10 @@
     font-size: calc($font-size/1.08);
     font-family: $font-familyRoboto;
     padding: 25px 0;
+  }
+
+  &__text-btns {
+    margin-top: 20px;
   }
 
   &__img {
@@ -133,3 +142,74 @@
   }
 }
 
+@media (max-width: 650px) {
+  body {
+    overflow: auto;
+  }
+.slider{
+
+  &__text-title {
+    font-size: $font-size * 1.4;
+    letter-spacing: 2px;
+    line-height: 2;
+  }
+
+  &__text {
+    width: 50%;
+  }
+
+  &__img {
+    width: 40%;
+    background-size: 70%;
+  }
+}
+}
+
+@media (max-width: 450px) {
+  .order-btn {
+    background: $colorMajorYellow;
+    padding: 16px 21px;
+    color: $colorMajorBlack;
+  }
+
+  .menu-btn {
+    background: none;
+    padding: 15px 20px;
+    border: 1px solid $colorMajorWhite;
+    color: $colorMajorWhite;
+    box-sizing: border-box;
+  }
+
+  .slider__text-btns {
+    @include display;
+    width: 239px;
+  }
+}
+
+@media (max-width: 450px) {
+  .slider{
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &.one,
+    &.two,
+    &.three {
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__text{
+      width: 70%;
+    }
+
+    &__text-btns {
+      @include display;
+      width: 239px;
+    }
+
+    &__img{
+      display: none;
+    }
+  }
+
+}
