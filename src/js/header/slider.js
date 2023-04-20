@@ -1,39 +1,49 @@
-const slides = document.querySelectorAll('.slider')
-const dots = document.querySelectorAll('.dots__item')
-const dotsBlock = document.querySelector('.dots')
 
+    const slides = document.querySelectorAll('.slider')
+    const dots = document.querySelectorAll('.dots__item')
+    const dotsInner = document.querySelectorAll('.dots__item-circle')
+    const dotsBlock = document.querySelector('.dots')
 
-let sliderIndex = 1;
-showSlides(sliderIndex)
+    let sliderIndex = 1;
+    showSlides(sliderIndex)
 
-dotsBlock.addEventListener('click', (event) => {
-    for (let i = 0; i < dots.length + 1; i++) {
-        if (event.target.classList.contains('dots__item') && event.target === dots[i - 1]) currentSlide(i)
+    dotsBlock.addEventListener('click', (event) => {
+        const clickedDot = event.target.closest('.dots__item-circle');
+        if (clickedDot) {
+            const dotIndex = Array.from(dotsInner).indexOf(clickedDot);
+            currentSlide(dotIndex + 1);
+        }
+    });
+
+    function currentSlide(n) {
+        showSlides(sliderIndex = n)
     }
-})
-function currentSlide(n) {
-    showSlides(sliderIndex = n)
-}
-function showSlides(n) {
-    if (n < 1) {
-        sliderIndex = slides.length
-    } else if (n > slides.length) {
-        sliderIndex = 1
-    }
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none'
-    }
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].classList.remove('active')
-    }
-    slides[sliderIndex - 1].style.display = 'flex'
-    dots[sliderIndex - 1].classList.add('active')
-}
 
-setInterval(() => {
-    sliderIndex++;
-    showSlides(sliderIndex);
-}, 3000);
+    setInterval(() => {
+        sliderIndex++;
+        showSlides(sliderIndex);
+    }, 5000);
 
+    function showSlides(n) {
+
+        if (n < 1) {
+            sliderIndex = slides.length;
+        } else if (n > slides.length) {
+            sliderIndex = 1;
+        } else {
+            sliderIndex = n;
+        }
+
+        slides.forEach((slide) => {
+            slide.style.display = 'none';
+        });
+
+        dots.forEach((dot) => {
+            dot.classList.remove('active');
+        });
+
+        slides[sliderIndex - 1].style.display = 'flex'
+        dots[sliderIndex - 1].classList.add('active')
+    }
 
 
