@@ -14,10 +14,10 @@ if (iconMenu) {
 }
 
 
-//scroll
+//scroll and active menu link
 
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]')
-
+let activeMenuLink = null;
 if (menuLinks.length > 0) {
     menuLinks.forEach(menuLink => {
         menuLink.addEventListener('click', onMenuLinkClick)
@@ -25,13 +25,22 @@ if (menuLinks.length > 0) {
             function onMenuLinkClick(e){
 
                 let menuLink = e.target
+
+                if (activeMenuLink) {
+                    activeMenuLink.classList.remove('selected');
+                }
+                menuLink.classList.add('selected')
+                activeMenuLink = menuLink;
+
                 if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+
                     const gotoBlock = document.querySelector(menuLink.dataset.goto)
-                    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight
+                    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.scrollY - document.querySelector('header').offsetHeight
                     if(iconMenu.classList.contains('_active')){
                         document.body.classList.remove('_lock')
                         iconMenu.classList.remove('_active')
                         menuBody.classList.remove('_active')
+
                     }
 
                     window.scrollTo({
@@ -42,9 +51,10 @@ if (menuLinks.length > 0) {
                 }
             }
 
-
         })
 }
+
+
 
 
 
