@@ -246,16 +246,22 @@ let btnPizzaItems = document.querySelector('.link-pizza');
 let btnDrinksItems = document.querySelector('.link-two');
 let btnBurgersitems = document.querySelector('.link-burgers');
 let btmPastaItems = document.querySelector('.link-pasta');
-let ChooseTypeOfProductList = document.querySelector('.select-section-list__item');
+let chooseTypeOfProductList = document.querySelector('.select-section-list__item');
 
-ChooseTypeOfProductList.addEventListener('click', function (e) {
+
+
+chooseTypeOfProductList.addEventListener('click', function (e) {
+   
   switch (e.target) {
       case btnPizzaItems:
-          ChangeBgForBtnCart(btnPizzaItems);
+      
+        ChangeBgForBtnCart(btnPizzaItems);
           ChoosingTypeOfProduct(dataPizzaList);
           RemoveBgForBtnCart(btnBurgersitems);
           RemoveBgForBtnCart(btmPastaItems);
           RemoveBgForBtnCart(btnDrinksItems);
+        
+        
           break;
       case btnDrinksItems:
           ChangeBgForBtnCart(btnDrinksItems);
@@ -291,17 +297,20 @@ let arrayForCartItems = [];
 if (arrayForCartItems.length > 3) {
   arrayForCartItems.length = 0;
 }
+let menuContainer = document.querySelector('.menu-container-select-section__item-foods ')
+let addToCartBtns = document.querySelectorAll(".menu-container-select-section__item-foods button");
+menuContainer.addEventListener('click', (e) => {
 
-window.addEventListener('click', (e) => {
-
-  let addToCartBtns = document.querySelectorAll(".menu-container-select-section__item-foods button");
   for (let el of addToCartBtns) {
 
       if (e.target == el) {
 
           let priceOfProducts = e.target.previousElementSibling;
+        
           let descriptionOfProducts = priceOfProducts.previousElementSibling;
+        
           let nameOfProducts = descriptionOfProducts.previousElementSibling;
+        
 
           let dataForCartItem = {
               name: nameOfProducts.textContent,
@@ -310,21 +319,18 @@ window.addEventListener('click', (e) => {
           arrayForCartItems.length = 0;
           arrayForCartItems.push(dataForCartItem);
       }
-
-
+   
   }
 })
 
-window.addEventListener("click", function (e) {
+document.addEventListener("click", function (e) {
   if (e.target == cartIcon) {
       document.querySelector("#my-modal").classList.add("open");
   }
 })
 
 let listProduct = document.querySelector('.menu__listOfProducts-pizza');
-let btnOrder = document.querySelectorAll('.menu button');
-
-let btnAddToCart = document.querySelectorAll('.menu-container-select-section__item-foods button');
+let btnOrder = document.querySelectorAll('.menu-section button');
 let listProductSelectSection = document.querySelector('.menu-container-select-section__item-foods ');
 
 
@@ -338,6 +344,8 @@ listProduct.addEventListener('click', (e) => {
 });
 
 listProductSelectSection.addEventListener('click', (e) => {
+
+    let btnAddToCart = document.querySelectorAll('.menu-container-select-section__item-foods button');
   for (let el of btnAddToCart) {
       if (e.target == el) {
           AddSiblingElementToCartSecond(e.target);
@@ -349,7 +357,7 @@ listProductSelectSection.addEventListener('click', (e) => {
 let buttonClosePopup = document.querySelector('#close-my-modal-btn svg');
 
 // modal window
-window.addEventListener("click", function (e) {
+document.addEventListener("click", function (e) {
 
   if (e.target == buttonClosePopup) {
 
@@ -359,7 +367,7 @@ window.addEventListener("click", function (e) {
 })
 
 // close modal window , press Esc
-window.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', (e) => {
   if (e.key === "Escape") {
       document.getElementById("my-modal").classList.remove("open");
   }

@@ -9,6 +9,7 @@ export const ChoosingTypeOfProduct  = (foods) => {
 
     let divItemsMenuWrapper = document.createElement('div');
     divItemsMenuWrapper.className = "div__itemsMenu" + counter;
+    divItemsMenuWrapper.classList.add("test")
     counter++;
 
     if (counter >= 3) {
