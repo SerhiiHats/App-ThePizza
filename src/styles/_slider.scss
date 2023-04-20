@@ -1,4 +1,6 @@
-
+body{
+  overflow: auto;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -141,6 +143,9 @@
 }
 
 @media (max-width: 650px) {
+  body {
+    overflow: auto;
+  }
 .slider{
 
   &__text-title {
