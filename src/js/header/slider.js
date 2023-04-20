@@ -19,10 +19,10 @@
         showSlides(sliderIndex = n)
     }
 
-    // setInterval(() => {
-    //     sliderIndex++;
-    //     showSlides(sliderIndex);
-    // }, 3000);
+    setInterval(() => {
+        sliderIndex++;
+        showSlides(sliderIndex);
+    }, 3000);
 
     function showSlides(n) {
 
