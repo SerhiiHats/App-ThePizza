@@ -22,7 +22,7 @@
     setInterval(() => {
         sliderIndex++;
         showSlides(sliderIndex);
-    }, 5000);
+    }, 3000);
 
     function showSlides(n) {
 

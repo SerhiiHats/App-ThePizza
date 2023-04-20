@@ -9,7 +9,11 @@
   @include display;
   font-family: $font-family;
   font-size: calc($font-size / 1.4);
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
   .menu {
     color: $colorMajorWhite;
@@ -28,4 +32,13 @@
   }
 .logo img{
   width: 80%;
+}
+
+
+@media (max-width: 650px) {
+
+  .container {
+    width: calc($size-container/2);
+  }
+
 }

@@ -1,3 +1,4 @@
+
 .overlay {
   position: absolute;
   top: 0;
@@ -9,7 +10,7 @@
 }
 
 .slider {
-  height: calc(100vh - 10vh);
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -41,10 +42,11 @@
   }
 
   &__text-subtitle {
-    font-family: $font-familyDelicious;
+    font-family: $font-familyNothing;
     color: $colorMajorYellow;
     font-style: italic;
     font-size: $font-size * 2;
+    line-height: 2;
   }
 
   &__text-title {
@@ -53,6 +55,7 @@
     font-weight: 600;
     font-size: $font-size * 2.2;
     letter-spacing: 1px;
+
   }
 
   &__text-description {
@@ -60,6 +63,10 @@
     font-size: calc($font-size/1.08);
     font-family: $font-familyRoboto;
     padding: 25px 0;
+  }
+
+  &__text-btns {
+    margin-top: 20px;
   }
 
   &__img {
@@ -131,4 +138,8 @@
       opacity: 1;
     }
   }
+}
+
+@media (max-width: 650px) {
+
 }
