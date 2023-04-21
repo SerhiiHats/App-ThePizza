@@ -57,9 +57,6 @@ const isChildren = () => {
 
 };
 
-
-
-
 export const RemoveBgForBtnCart = (element) => {
 
   element.style.color = "rgb(243, 135, 12)";
