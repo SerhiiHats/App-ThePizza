@@ -1,11 +1,6 @@
 
 
-import Italiana from "../../images/img_menu/pizza-1test.jpg";
-import Greak from "../../images/img_menu/pizza-2test.jpg";
-import Caucasian from "../../images/img_menu/pizza-3test.jpg";
-import American from "../../images/img_menu/pizza-4test.jpg";
-import Tomatoe from "../../images/img_menu/pizza-5.jpg";
-import Margherita from "../../images/img_menu/pizza-6test.jpg";
+
 import ItalianaBg from "../../images/img_menu/pizza-1-Bg.png";
 import HawaiaSpecialBg from "../../images/img_menu/pizza-5-Bg.png";
 import HawaiaBg from "../../images/img_menu/pizza-2-Bg.png";

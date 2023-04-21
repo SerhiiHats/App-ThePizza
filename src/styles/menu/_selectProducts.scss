@@ -60,7 +60,18 @@
     background-color:rgb(0, 0, 0);
     border: 1px solid rgb(255, 124, 17);
 }
+@media (max-width : 1850px) {
+    .menu__listOfProducts-pizza img{
+        max-width: 200px;
+        max-height: 150px;
 
+    }
+    .menu__listOfProducts-pizza .description__text{
+        max-width: 200px;
+        max-height: 150px;
+
+    }
+}
 @media (max-width:1405px) {
     .menu-container-select-section__item-foods img{
         max-width: 100px;
@@ -95,13 +106,6 @@
         grid-template-columns: 400px 700px;
 
     }
-    .menu-container-select-food__img{
-        
-    }
-    .menu-container-select-section{
-        
-    }
-    
   }
   @media (max-width : 1050px) {
     .menu-container-select-section__item-foods img{
