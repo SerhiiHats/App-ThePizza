@@ -1,80 +1,174 @@
-
-*{
-    margin: 0;
-
-}
-.menu__listOfProducts-pizza img{
-   max-height: 258px;
-   width: 326px;
-}
-
-.menu__listOfProducts-pizza{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 100%;
-}
-
-.menu__listOfProducts-wrapper{
-   display: flex;
-    opacity: 0.9;
-}
-.menu__listOfProducts-wrapper h3{
-    color:rgb(253, 253, 253);
-    font-size: 23px;
-    padding: 15px;
-}
-.menu__listOfProducts-wrapper p{
-    font-size:  20px;
-    color:rgb(153, 151, 151);
-    padding: 15px;
-    max-width: 289px;
-}
-.menu__listOfProducts-wrapper button:hover{
-    color:rgb(255, 124, 17);;
-    background-color:rgb(0, 0, 0);
-    border: 1px solid rgb(255, 124, 17);
-}
-
-.menu__header{
+/// menu header
+.menu__header {
     text-align: center;
     height: 250px;
     padding-top: 55px;
     align-items: center;
     display: flex;
     flex-direction: column;
+
+    h3 {
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+
+    p {
+        color: rgb(153, 151, 151);
+        text-align: center;
+        font-size: 18px;
+        max-width: 642px;
+    }
 }
-.menu__header h3{
-color:rgb(255, 255, 255);
-font-size: 35px;
-padding-bottom: 20px;
-}
-.menu__header p{
-    color:rgb(153, 151, 151);
-    text-align: center;
-    font-size: 18px;
-    max-width: 642px;
-}
-.div__price-wrapper p{
-   color:rgb(218, 135, 12);
-   font-size:  $font-size;
-}
-.div__price-wrapper{
-    display: flex;
-    align-items:baseline;
-    padding-top: 30px;
-}
-.div__price-wrapper button {
-    background-color:rgb(46, 43, 43);
-    color:rgb(253, 253, 253);
-    border: 1px solid rgb(255, 255, 255);
-    font-size:  $font-size;
-    padding:  15px;
-    max-height: 33px;
-    align-items:center;
+
+// menu info about pizza
+.menu-section__info-about-pizza {}
+
+.info-about-pizza__container {
     display: flex;
 }
 
+.info-about-pizza__container-second-row {
+    display: flex;
+}
+
+.item-box {
+    width: 33.3%;
+    display: flex;
+
+}
 
 
+.item-box img {
+    max-width: 100%;
+}
 
+.item-box__wrapper-img {
+    max-width: 50%;
+}
+
+.item-box__wrapper-description {
+    max-width: 50%;
+    opacity: 0.8;
+
+    h3 {
+        color: rgb(253, 251, 253);
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .description__text{
+        font-size: 21px;
+        padding: 15px;
+        line-height: 30px;
+        color:rgb(136, 133, 136);
+    }
+}
+
+.wrapper__price-btn {
+    padding: 15px;
+    color: rgb(241, 99, 4);
+
+    span {
+        padding-left: 10px;
+    }
+
+    button {
+        padding: 3px 10px;
+        font-size: 16px;
+        border: 1px solid rgb(253, 253, 253);
+        background: none;
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media (min-width:1200px) and (max-width:1550px) {
+    .item-box__wrapper-description p {
+        font-size: 19px;
+        padding: 7px;
+        line-height: 19px;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+    .item-box__wrapper-description p {
+        font-size: 15px;
+        padding: 8px;
+        line-height: 1;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .item-box__wrapper-description {
+        p {
+            font-size: 12px;
+            padding: 5px;
+            line-height: 1;
+        }
+
+        h3 {
+            font-size: 17px;
+            padding: 5px;
+        }
+
+        .wrapper__price-btn {
+            padding: 0;
+        }
+
+        button {
+            padding: 2px;
+            font-size: 13px;
+        }
+    }
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .item-box {
+        display: block;
+
+        .item-box__wrapper-img {
+            max-width: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+        .item-box__wrapper-description {
+            max-width: none;
+
+            h3{
+                font-size: 12px;
+                padding: 5px;
+
+            }
+            p{
+                font-size: 14px;
+                padding: 12px;
+                line-height: 20px;
+            }
+            button{
+                padding: 6px;
+                font-size: 12px;
+            }
+        }
+    }
+    .four {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .five {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .six {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+
+.menu-section__info-about-pizza button:hover{
+    color:rgb(255, 124, 17);;
+    background-color:rgb(0, 0, 0);
+    border: 1px solid rgb(255, 124, 17);
+}

@@ -63,3 +63,27 @@ margin-top: 100px;
     color:rgb(148, 148, 148);
     font-size: $font-size;
 }
+
+@media (min-width:320px) and (max-width:480px) {
+    
+   .menu-pricing__header {
+    img{
+        width: 150px;
+    }
+    p{
+        padding-bottom: 50px;
+        max-width: 260px;
+        font-size: 13px;
+    }
+    h3{
+        font-size: 15px;
+    }
+
+   }
+   .name__menu-pizza {
+    padding-right: 0;
+   }
+   .menu-item img {
+    max-height: 50px;
+   }
+}
