@@ -110,3 +110,9 @@
     color:rgb(243, 135, 12);
     border:1px solid  rgb(243, 135, 12);
 }
+@media (min-width: 483px) and (max-width:1050px) {
+    .menu__cart img{
+        right:auto;
+    }
+    
+}

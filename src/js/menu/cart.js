@@ -1,17 +1,21 @@
 export const AddSiblingElementToCart = (event) => {
 
-  let price = event.previousElementSibling;
+  let span = event.parentElement;
 
-  let parentEvent = event.parentElement;
-  let description = parentEvent.previousElementSibling;
-  let name = description.previousElementSibling;
+  let parent = span.parentElement
+  let p = parent.parentElement;
+
+  let name = p.firstElementChild
+  let priceWrapper = span.parentElement;
+
+  let price = priceWrapper.textContent.substr(1, 4);
 
   let modalBox = document.querySelector('.modal__box-products');
   let nameOfProducts = document.createElement('p');
   nameOfProducts.textContent = name.textContent;
 
   let parPrice = document.createElement('p');
-  parPrice.textContent = price.textContent;
+  parPrice.textContent = price;
 
   modalBox.append(nameOfProducts);
   modalBox.append(parPrice);
