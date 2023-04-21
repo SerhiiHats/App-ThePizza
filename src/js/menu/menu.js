@@ -26,9 +26,9 @@ import carT from "../../images/img_menu/bag.png";
 import about from "../../images/img_menu/about.jpg";
 
 
-import { HotPizzaMeals } from "./hotPizzaMeals";
+
 import { OurMenuPricing } from "./ourMenuPricing";
-import { HotPizzaMealsSecondRow } from './hotPizzaMeals';
+
 
 import { ChoosingTypeOfProduct } from "./typeOfProducts";
 import { ChangeBgForBtnCart } from "./cart";
@@ -38,49 +38,6 @@ import { AddSiblingElementToCart } from "./cart";
 import { AddSiblingElementToCartSecond } from "./cart";
 
 
-let dataForSectionHotPizzaMeals = [
-  {
-      name: "Italiana Pizza",
-      desciption: "Far far away,behind the word mountains,far fram the countries Vakalia and Cansonantia",
-      img: Italiana,
-      price: "$2.00",
-  },
-  {
-
-      name: "Greak Pizza",
-      desciption: "Far far away,behind the word mountains,far fram the countries Vakalia and Cansonantia",
-      img: Greak,
-      price: "$2.30",
-  },
-  {
-
-      name: "Caucasian Pizza",
-      desciption: "Far far away,behind the word mountains,far fram the countries Vakalia and Cansonantia",
-      img: Caucasian,
-      price: "$2.45",
-  },
-];
-
-let dataForSectionHotPizzaMealsSecondRow = [
-  {
-      name: "American Pizza",
-      desciption: "Far far away,behind the word mountains,far fram the countries Vakalia and Cansonantia",
-      img: American,
-      price: "$1.90",
-  },
-  {
-      name: "Tomatoe Pizza",
-      desciption: "Far far away,behind the word mountains,far fram the countries Vakalia and Cansonantia",
-      img: Tomatoe,
-      price: "$2.20",
-  },
-  {
-      name: "Margherita Pizza",
-      desciption: "Far far away,behind the word mountains,far fram the countries Vakalia and Cansonantia",
-      img: Margherita,
-      price: "$2.50",
-  },
-]
 
 let dataForMenuPricing = [
   {
@@ -234,9 +191,6 @@ selectFoodImg.src = about;
 
 OurMenuPricing(dataForMenuPricing);
 
-HotPizzaMeals(dataForSectionHotPizzaMeals);
-
-HotPizzaMealsSecondRow(dataForSectionHotPizzaMealsSecondRow);
 
 ChoosingTypeOfProduct(dataPizzaList);
 
