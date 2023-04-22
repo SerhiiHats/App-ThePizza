@@ -1,77 +1,131 @@
 $sizeHome: 10px;
-$borderTest: 1px solid tomato;
 $colorHomeGrey: grey;
 
-.header-home {
-    display: flex;
-    align-items: center;
-    width: 100%;
-
-    .left-card-header {
-        width: 65%;
-        border: $borderTest;
-        height: 167px;
-        background-color: $colorMajorBlack;
-    }
-
-    .right-card-header {
-        width: 35%;
-        border: $borderTest;
-        height: 167px;
-        background-color: $colorMajorYellow;
+.wrap-welcome {
+    .welcome-header {
         display: flex;
         align-items: center;
+        width: 100%;
+        background-color: $colorMajorYellow;
 
-        a {
-            margin-left: $sizeHome*3;
-            color: $colorMajorWhite;
-            font-size: $sizeHome*2;
+        .left-card-header {
+            width: 65%;
+            min-height: 167px;
+            background-color: $colorMajorBlack;
+            display: grid;
+            grid-template-columns: 2fr 2fr 30px 2fr 30px 3fr;
+            gap: 12px;
+            align-items: center;
 
-            &:first-child {
-                margin-left: $sizeHome*7;
+            div {
+                color: $colorMajorWhite;
+                font-size: $sizeHome * 1.7;
+                color: $colorMajorWhite;
+                font-family: $font-familyRoboto;
+                letter-spacing: $sizeHome * 0.1;
+                line-height: $sizeHome * 2.7;
+                img {
+                    width: $sizeHome * 2.6;
+                }
+
+                i {
+                    color: $colorMajorYellow;
+                }
+
+                @for $index from 1 to 7 {
+                    &:nth-child(#{$index}) {
+                        align-self: flex-end;
+                    }
+                }
+                $r: 1;
+                @while $r<7 {
+                    &:nth-child(#{$r}) {
+                        justify-self: end;
+                        $r: $r + 2;
+                    }
+                }
+
+                $n: 2;
+                @for $i from 7 to 10 {
+                    &:nth-child(#{$i}) {
+                        grid-column: $n;
+                        align-self: flex-start;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: $sizeHome * 1.7;
+                        color: $colorHomeGrey;
+                        $n: $n + 2;
+                    }
+                }
             }
+        }
 
-            &:hover {
-                color: $colorHomeGrey;
+        .right-card-header {
+            width: 35%;
+            height: 167px;
+            background-color: $colorMajorYellow;
+            display: flex;
+            align-items: center;
+
+            a {
+                margin-left: $sizeHome * 3;
+                color: $colorMajorWhite;
+                font-size: $sizeHome * 2.2;
+
+                &:first-child {
+                    margin-left: $sizeHome * 7;
+                }
+
+                &:hover {
+                    color: $colorHomeGrey;
+                }
             }
         }
     }
 
-    .home-botton {
+    .welcome-botton {
         display: flex;
-        // align-items: center;
-        // width: 100%;
+        background-image: url("~assets/img/home/bg_4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
 
         .left-card-welcome {
             width: 50%;
-            // text-align: center;
-            // overflow: hidden;
-
-
 
             img {
                 width: 100%;
-                border: $borderTest;
-                // height: auto;
-                // vertical-align: middle;
             }
-
         }
 
         .right-card-welcome {
             width: 50%;
-            max-height: 100%;
-            background-image: url("~assets/img/home/bg_4.jpg");
-            background-size: cover;
-            // background-position: center;
-            background-repeat: no-repeat;
-            border: $borderTest;
-           
+            padding: $sizeHome * 10 $sizeHome * 9 $sizeHome * 3;
 
+            h3 {
+                text-transform: uppercase;
+                font-size: $sizeHome * 3;
+                color: $colorMajorWhite;
+                font-family: $font-familyRoboto;
+                letter-spacing: $sizeHome * 0.2;
+                word-spacing: $sizeHome * 0.2;
+
+                img {
+                    width: $sizeHome * 3.5;
+                }
+
+                span {
+                    color: $colorMajorYellow;
+                }
+            }
+
+            p {
+                color: $colorHomeGrey;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: $sizeHome * 3.5;
+                letter-spacing: $sizeHome * 0.1;
+                word-spacing: $sizeHome * 0.1;
+                line-height: $sizeHome * 2.7;
+                font-size: $sizeHome * 1.7;
+            }
         }
-
-
     }
-
-
 }
