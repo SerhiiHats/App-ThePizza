@@ -37,7 +37,7 @@ module.exports = {
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     new HtmlWebpackPlugin({
       title: 'pizza',
-      favicon: paths.src + '/images/pizza-title.png',
+      favicon: paths.src + '/images/pizza777_title.png',
       template: paths.src + '/template.html', // template file
       filename: 'index.html', // output file
     }),
